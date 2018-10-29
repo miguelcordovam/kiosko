@@ -1,0 +1,16 @@
+security:
+  oauth2:
+    client:
+      clientId: 
+      clientSecret: 
+      accessTokenUri: https://api.mercadolibre.com/oauth/token
+      userAuthorizationUri: https://auth.mercadolibre.com.pe/authorization
+      clientAuthenticationScheme: form
+      authenticationScheme: query
+      tokenName: access_token
+      grant-type: authorization_code
+    resource:
+      userInfoUri: https://api.mercadolibre.com/users/me
+server:
+  servlet:
+    context-path: /api
